@@ -1,0 +1,249 @@
+.div_0 {
+    width: 100%;
+    height: 60px; 
+    box-sizing: border-box;
+    color:white; 
+    padding: auto;   
+    padding-left: 100px;
+    background-color:#4c4d52;
+    border-top:solid 6px;
+    border-top-color:#f80 ;
+}
+
+.head {
+  margin-top: 12px;
+}
+.mm{
+  color: red;
+}
+
+.div_1 {
+    width: 100%;
+    background-color: rgb(228,228,228);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+    
+}
+
+.but_tip_dorogi{
+  text-align: center;
+  padding-top: 0px;
+  float: right;
+  width: 150px;
+  height: 25px;
+  border-radius: 10px;
+  margin-right: 72px;
+  background-color: #f9d15c!important;
+  background-image: linear-gradient(180deg,#fad961,#fad15c 25%,#f76b1c);
+  box-sizing: content-box;
+}
+
+.menu {
+    width: 68%;
+    background-color: white;
+    border-bottom: 2px solid rgb(146,146,146) ;
+    border-right: 2px solid rgb(146,146,146);
+    padding-left: 90.64px;
+    }
+    
+      table,h3 {
+        margin-left: -82px;
+        color: #6e7b7b;
+        border-collapse: collapse;
+        width: 90%;
+      
+      }
+      
+      th, td {
+        width: 80px;
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;        
+        }
+
+        th{
+          border-bottom: 3px solid #f80;
+        }  
+        
+        .string{
+          word-break: break-all;
+          overflow-y: auto;
+          width: 100px;
+          height: 43px;
+          padding-top: 0px;
+          box-sizing: border-box;
+          font-size: 12px;
+        }
+   
+        tr{
+          height: 43px;
+          box-sizing: border-box;
+         vertical-align: text-top;
+        }
+         tr:hover .update, tr:hover .delete{
+          display: block;              
+        }
+            
+
+        .update{
+          width: 25px;
+          height: 25px;
+          color: white;
+          text-align: center;
+          background-color: #f9d15c!important;
+          background-image: linear-gradient(180deg,#fad961,#fad15c 25%,#f76b1c);
+          border-radius: 14px;
+          cursor: pointer;
+          display: none;
+        }
+
+        .delete{
+          width: 25px;
+          height: 25px;
+          color:white;
+          text-align: center;
+          padding-bottom:2px;
+          background-color:rgb(177, 95, 37) ;
+          border-radius: 14px;
+          cursor: pointer;
+          display: none;
+        }
+
+        .up_del{
+          width: 25px;
+          height: 25px;
+          box-sizing: border-box;
+          text-align: center;
+        }
+
+      .modal-1{
+        padding-left: 10px;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .modal-header{       
+        padding: 0px;
+        color:white;
+        background-color:#f80 ;
+        padding-left: 10px;
+      }
+
+      select{
+        width: 250px;
+        height: 30px;
+      }
+      .input_1{
+        width: 200px;
+        height: 400px;
+        box-sizing: border-box;
+      }
+      .input_2{
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+
+      .input_3{
+        width: 200px;
+        height: 40px;
+        box-sizing: border-box;
+      }
+      .but_1{
+        width: 90px;
+        height: 30px;
+    cursor: pointer;
+    margin-top: 94px;
+    margin-left: -78px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f80;
+      }
+   
+      .fin_but{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 40px;
+        margin-right: 40px;
+      }
+      .but_sozdat{
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+        border-color: #f80;
+      }
+      .but_otmena{
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #f9d15c!important;
+        background-image: linear-gradient(180deg,#fad961,#fad15c 25%,#f76b1c);
+      
+      }
+      .modal-body{
+        color: white;
+        height: 200px;
+        text-align: center;
+        padding-top: 60px;
+        border-radius: 10px;
+        background-color:hsl(230,5%,22%) ;
+      }
+      .btn btn-danger{
+        width: 200px;
+        height: 40px;
+        background-color:#f80;
+      }
+    .btn_ok{
+      padding:3px 10px 3px;
+      background-color: #f9d15c!important;
+      background-image: linear-gradient(180deg,#fad961,#fad15c 25%,#f76b1c);
+    }
+
+  .mini{
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 8px;
+
+    /* display: inline; */
+  }
+
+  .krug{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f76b1c;
+    box-sizing: border-box;
+    margin-top: 8px;
+  
+  }
+    .lab{
+      width: 50px;
+      height: 10px;
+      box-sizing: border-box;
+      margin-left: 4px;
+    }
+
+    .modal-body2{
+      color: white;
+      height: 200px;
+      text-align: center;
+      padding-top: 60px;
+      border-radius: 10px;
+      background-color:hsl(230,5%,22%) ;
+    }
+    .img_{
+      width: 43px;
+      height: 43px;
+      box-sizing: border-box;
+    }
+    .danger{
+      color: red;
+      border: 1px solid red;
+      outline: none;
+    }
