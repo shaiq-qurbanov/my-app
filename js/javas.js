@@ -113,4 +113,5 @@ function send(action,form_data,type){
 
       })
 }
+console.log('cx');
   });
