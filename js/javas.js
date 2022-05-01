@@ -123,4 +123,7 @@ function myFunc(x){
    }
 }
 myFunc(7);
+
+string = '123456789'
+console.log(string.length);
   })
