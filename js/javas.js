@@ -114,5 +114,5 @@ function send(action,form_data,type){
       })
 }
 
-
+console.log("hello");
   })
