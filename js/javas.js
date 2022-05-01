@@ -114,5 +114,13 @@ function send(action,form_data,type){
       })
 }
 
-console.log("my first git");
+let x;
+function myFunc(x){
+   if(x<18){
+      console.log(x*x);
+   }else{
+      console.log(x+20);
+   }
+}
+myFunc(7);
   })
