@@ -114,5 +114,5 @@ function send(action,form_data,type){
       })
 }
 
-let sql
+console.log(4+5);
   })
