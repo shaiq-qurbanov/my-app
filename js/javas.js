@@ -126,4 +126,13 @@ myFunc(7);
 
 string = '123456789'
 console.log(string.length);
+
+let n='num';
+function func(n){
+    n='string'
+    return 5+n;
+}
+console.log(n);
+console.log(func())
+
   })
