@@ -135,4 +135,14 @@ function func(n){
 console.log(n);
 console.log(func())
 
+let person = {
+   name:"cavid",
+   lastname:"qurbanov",
+   age:"54"
+}
+list = "";
+for(let k in person){
+list +=person[k] + " "; 
+}
+console.log(list);
   })
