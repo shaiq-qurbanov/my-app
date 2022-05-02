@@ -114,35 +114,37 @@ function send(action,form_data,type){
       })
 }
 
-let x;
-function myFunc(x){
-   if(x<18){
-      console.log(x*x);
-   }else{
-      console.log(x+20);
-   }
-}
-myFunc(7);
+// let x;
+// function myFunc(x){
+//    if(x<18){
+//       console.log(x*x);
+//    }else{
+//       console.log(x+20);
+//    }
+// }
+// myFunc(7);
 
-string = '123456789'
-console.log(string.length);
+// string = '123456789'
+// console.log(string.length);
 
-let n='num';
-function func(n){
-    n='string'
-    return 5+n;
-}
-console.log(n);
-console.log(func())
+// let n='num';
+// function func(n){
+//     n='string'
+//     return 5+n;
+// }
+// console.log(n);
+// console.log(func())
 
-let person = {
-   name:"cavid",
-   lastname:"qurbanov",
-   age:"54"
-}
-list = "";
-for(let k in person){
-list +=person[k] + " "; 
-}
-console.log(list);
+// let person = {
+//    name:"cavid",
+//    lastname:"qurbanov",
+//    age:"54"
+// }
+// list = "";
+// for(let k in person){
+// list +=person[k] + " "; 
+// }
+// console.log(list);
+
+
   })
