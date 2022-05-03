@@ -23,10 +23,10 @@
   <div class="lab"> <label for="proekt">Proekt:</label></div><br>
 </div>
   <select id="cars" name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+    <option name="volvo" id="volvo" value="volvo">Volvo</option>
+    <option name="saab" id="saab" value="saab">Saab</option>
+    <option name="fiat" id="fiat" value="fiat">Fiat</option>
+    <option name="audi" id="audi" value="audi">Audi</option>
   </select><br>
   <div class="mini">
   <div class="krug"></div>   

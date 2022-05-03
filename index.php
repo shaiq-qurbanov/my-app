@@ -49,6 +49,7 @@ include "db/getusers.php";
 // $row;
 if(!empty($result) && $result->num_rows>0){
   while($row=$result->fetch_assoc()){?>
+  <tr id = "data">
 <td id="id_"> <?php echo $row['id'];?> </td>
 <td id="tip_" class="string" > <?php echo $row['tip_darogi'];?> </td>
 <td id="kod_" class="string" > <?php echo $row['kod'];?> </td>
@@ -60,7 +61,7 @@ if(!empty($result) && $result->num_rows>0){
 <td id="porog_"><?php echo $row['skarostnoy_porog'];?></td>
 <td id="datch_"><?php echo $row['kol_vo_datchikov'];?></td>
 <td id="drpog_"> <?php echo $row['kol_vo_drpog'];?></td>
-<td></td>
+<td id="proekt_"> <?php echo $row['proekt'];?></td>
  <td><div class="update" id= "up_" data-type="update" data-toggle="modal" data-target="#myModal" data-id="<?php
   echo $row["id"];?>">/</div></td>
 <td><div class="delete"   data-id ="<?php echo $row["id"];?>">x</div></td>

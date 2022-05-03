@@ -28,9 +28,9 @@ $stmt = "CREATE TABLE spisok_doroq(
 
 
 $stmt = $conn->prepare("INSERT INTO spisok_doroq(tip_darogi, kod, znak, maks_kol_vo_polos,
- maks_skorost, skarostnoy_porog, kol_vo_datchikov, kol_vo_drpog) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssiiiii",$tip_darogi, $kod, $znak, $maks_kol_vo_polos, $maks_skorost,$skarostnoy_porog,
- $kol_vo_datchikov, $kol_vo_drpog);
+ maks_skorost, skarostnoy_porog, kol_vo_datchikov, kol_vo_drpog,proekt) VALUES(?, ?, ?, ?, ?, ?, ?, ?,?)");
+$stmt->bind_param("sssiiiiis",$tip_darogi, $kod, $znak, $maks_kol_vo_polos, $maks_skorost,$skarostnoy_porog,
+ $kol_vo_datchikov, $kol_vo_drpog,$project);
 
 $tip_darogi = $_POST["tip_darogi"];
 $kod = $_POST["kod"];
@@ -40,7 +40,7 @@ $maks_skorost= $_POST["maks_skorost"];
 $skarostnoy_porog = $_POST["skarostnoy_porog"];
 $kol_vo_datchikov = $_POST["kol_vo_datchikov"];
 $kol_vo_drpog = $_POST["kol_vo_drpog"];
-
+$project = $_POST["project"];
 
 $stmt->execute();
 // echo $_FILES["file"]["name"];
