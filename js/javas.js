@@ -7,7 +7,8 @@ $("#create").click(function(){
   action = $(this).attr('data-type')
    // console.log($(this).attr('data-type'))
    
-// let input = $('#tip');
+
+
 $("input").on("input",function(){  
    let length = $(this).val().length
    length > 5 ? $(this).addClass("danger") : $(this).removeClass("danger");   
