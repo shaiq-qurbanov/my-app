@@ -83,12 +83,12 @@
           box-sizing: border-box;
          vertical-align: text-top;
         }
-         tr:hover .update, tr:hover .delete{
+         tr:hover .update_data, tr:hover .delete{
           display: block;              
         }
             
 
-        .update{
+        .update_data{
           width: 25px;
           height: 25px;
           color: white;

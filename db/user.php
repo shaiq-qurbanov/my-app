@@ -23,6 +23,7 @@
   <div class="lab"> <label for="proekt">Proekt:</label></div><br>
 </div>
   <select id="cars" name="cars">
+    <option name="" value="">select car</option>
     <option name="volvo" id="volvo" value="volvo">Volvo</option>
     <option name="saab" id="saab" value="saab">Saab</option>
     <option name="fiat" id="fiat" value="fiat">Fiat</option>

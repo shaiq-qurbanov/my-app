@@ -1,4 +1,5 @@
 $(document).ready(function(){
+let id;
 let project;   
 let action; 
 $("#create").click(function(){
@@ -20,9 +21,9 @@ getSelect();
    
 });
 
-$("body").on("click",".update",function(){
+$("body").on("click",".update_data",function(){
    $("#save").text("update");
-  
+  id = $(this).attr("data-id")
    action = $(this).attr('data-type') 
   
    $("#tip").val($(this).parent().parent().children().eq(1).text());
@@ -33,18 +34,27 @@ $("body").on("click",".update",function(){
    $("#porog").val($(this).parent().parent().children().eq(6).text());
    $("#datch").val($(this).parent().parent().children().eq(7).text());
    $("#drpog").val($(this).parent().parent().children().eq(8).text());  
+   
    //yuxaridakilari belede yazmaq olar->
    // $("#drpog").find("#drpog_")
    let proekt = $("#data").find("#proekt_").text();
-   console.log("mm",proekt);
+   getSelect();
+   // console.log("mm",proekt,"test");
    // $("#cars").val(project).attr("selected",true);
-   $(`select option[value=${proekt}]`).attr("selected",true);
-  
+   if(proekt.length){
+  $("select option[value='"+proekt+"']").attr("selected",true);
+   }
    })
 
  $("#save").click(function(){
    //  console.log(action);
+   // let id;
+   // $("#cars").on("click",".update_data" , function(){
+   // id = $(this).attr("data-id");
+   
+   // })
 
+console.log("id",id)
  if (action == "create"){
 
  
@@ -67,7 +77,9 @@ let img=$("#znak")[0].files[0];
 send(action,form_data,'POST');
 
  }else {
-   let user_id = $("#up_").attr("data-id");
+   //  project = $("#cars").val();
+   getSelect();
+   // let user_id = $("#up_").attr("data-id");
    let form_data = new FormData();
    form_data.append("tip_darogi", $("#tip").val());
    form_data.append("kod",$("#kod").val());
@@ -77,8 +89,8 @@ send(action,form_data,'POST');
    form_data.append("kol_vo_datchikov", $("#datch").val());
    form_data.append("kol_vo_drpog", $("#drpog").val());
    form_data.append("project",project);
-   form_data.append("id", user_id); 
-  console.log($("#tip").val(), $("#datch").val(), $("#drpog").val(),action)
+   form_data.append("id",id); 
+  console.log($("#tip").val(), $("#datch").val(), $("#drpog").val(),action,project,id)
 send(action,form_data,'POST');
  }
  });
@@ -119,6 +131,7 @@ function send(action,form_data,type){
          processData:false,
          contentType:false,
          success:function(data){
+            $("#tabl").load(location.href +'  #tabl > *')
             // console.log("mm" ,"kol_vo_drpog");
          }
 
@@ -192,10 +205,7 @@ function getSelect(){
    $("#cars").change(function(){
       project = $(this).val();
    })
-
-
-
-
+   return project;
 }
 
   })

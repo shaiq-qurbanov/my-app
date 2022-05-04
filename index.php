@@ -62,7 +62,7 @@ if(!empty($result) && $result->num_rows>0){
 <td id="datch_"><?php echo $row['kol_vo_datchikov'];?></td>
 <td id="drpog_"> <?php echo $row['kol_vo_drpog'];?></td>
 <td id="proekt_"> <?php echo $row['proekt'];?></td>
- <td><div class="update" id= "up_" data-type="update" data-toggle="modal" data-target="#myModal" data-id="<?php
+ <td><div class="update_data" id= "up_" data-type="update" data-toggle="modal" data-target="#myModal" data-id="<?php
   echo $row["id"];?>">/</div></td>
 <td><div class="delete"   data-id ="<?php echo $row["id"];?>">x</div></td>
 </tr>
