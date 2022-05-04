@@ -2,6 +2,7 @@ $(document).ready(function(){
 let project;   
 let action; 
 $("#create").click(function(){
+   $("#save").text("sozdat")
   action = $(this).attr('data-type')
    // console.log($(this).attr('data-type'))
    
@@ -20,21 +21,25 @@ getSelect();
 });
 
 $("body").on("click",".update",function(){
+   $("#save").text("update");
+  
    action = $(this).attr('data-type') 
   
    $("#tip").val($(this).parent().parent().children().eq(1).text());
    $("#kod").val($(this).parent().parent().children().eq(2).text());
+   // $("#polos").find("#polos_")
    $("#polos").val($(this).parent().parent().children().eq(4).text());
    $("#maks_s").val($(this).parent().parent().children().eq(5).text());
    $("#porog").val($(this).parent().parent().children().eq(6).text());
    $("#datch").val($(this).parent().parent().children().eq(7).text());
-   // $("#drpog").val($(this).parent().parent().children().eq(8).text());  
+   $("#drpog").val($(this).parent().parent().children().eq(8).text());  
    //yuxaridakilari belede yazmaq olar->
-   $("#drpog").find("#drpog_")
+   // $("#drpog").find("#drpog_")
    let proekt = $("#data").find("#proekt_").text();
    console.log("mm",proekt);
    // $("#cars").val(project).attr("selected",true);
    $(`select option[value=${proekt}]`).attr("selected",true);
+  
    })
 
  $("#save").click(function(){
@@ -155,7 +160,7 @@ $("select").change(function(){
 let str = "";
 $("select option:selected").each(function() {
    str += $(this).val();
-   console.log("test",str);
+   // console.log("test",str);
 });
 
 

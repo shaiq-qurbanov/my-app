@@ -10,6 +10,7 @@ $maks_skorost= $_POST["maks_skorost"];
 $skarostnoy_porog = $_POST["skarostnoy_porog"];
 $kol_vo_datchikov = $_POST["kol_vo_datchikov"];
 $kol_vo_drpog = $_POST["kol_vo_drpog"];
+$proekt = $_POST["proekt"];
 $id = $_POST["id"]; 
 
 echo $id;
@@ -27,3 +28,11 @@ if ($conn->query($sql) === TRUE) {
   echo "Error updating record: " . $conn->error;
   }
   $conn->query($sql);
+$stmt="UPDATE spisok_doroq SET proekt ='$proekt' WHERE id=$id";
+
+if ($conn->query($stmt) === TRUE) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . $conn->error;
+  }
+  $conn->query($stmt);

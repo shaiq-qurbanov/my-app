@@ -42,7 +42,7 @@ include "db/getusers.php";
 <th>Proekt</th>
 <th><div class="up_del">/</div></th>
 <th><div class="up_del">x</div></th>
-</tr class="data">
+</tr>
 </thead>
 <tbody>
 <?php

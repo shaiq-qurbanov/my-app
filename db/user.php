@@ -32,12 +32,12 @@
   <div class="krug"></div>   
   <div class="lab"> <label for="maks_skorost">Maks./raz/skorost km/c</label></div><br>
    </div>
-  <input type="number" id="maks_s" name="maks_skorost" value=""><br>
+  <input type="text" id="maks_s" name="maks_skorost" value=""><br>
   <div class="mini">
   <div class="krug"></div>
   <div class="lab"><label for="Maks_kol_vo_polos">Makc./kol./polos</label></div><br>
    </div>
-  <input type="number" id="polos" name="maks_kol_vo_polos" value=""><br> 
+  <input type="text" id="polos" name="maks_kol_vo_polos" value=""><br> 
   <div class="mini">
   <div class="krug"></div>
   <div class="lab"><label for="kod">Kod</label></div><br>
@@ -48,7 +48,7 @@
   <div class="lab"><label for="kol_vo_datchikov">kol.datchikov</label></div><br>
   </div>
 
-  <input type="number" id="datch" name="kol_vo_datchikov" value="">
+  <input type="text" id="datch" name="kol_vo_datchikov" value="">
  
 </div>
 <div class="input_2">
